@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js example</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="p5.js"></script>
+    <script src="p5.sound.js"></script>
+    <script src="sketch.js"></script>
+    <link rel="stylesheet" href="master.css">
+  </head>
+
+  <body>
+  <h1>How much do you know about Illinois?</h1>
+
+  <div id="contentContainer">
+        <img class="Illinois" src="./images/illinois-map.gif">
+
+  <form id = "quiz" name = "quiz">
+
+  <p>1. What is the Capital of Illinois?</p>
+    <input type = "radio" id = "mc" name = "question1" value = "Chicago">Chicago<br>
+    <input type = "radio" id = "mc" name = "question1" value = "Champaign">Champaign<br>
+    <input type = "radio" id = "mc" name = "question1" value = "Springfield">Springfield<br>
+    <input type = "radio" id = "mc" name = "question1" value = "East St. Louis">East St. Louis<br>
+
+    <p>2. The State Motto is...</p>
+    <input type = "radio" id = "mc" name = "question2" value = "Land of Lincoln">Land of Lincoln<br>
+    <input type = "radio" id = "mc" name = "question2" value = "Home of Ronald Reagan">Home of Ronald Reagan<br>
+    <input type = "radio" id = "mc" name = "question2" value = "Land of 100 Lakes">Land of 100 Lakes<br>
+    <input type = "radio" id = "mc" name = "question2" value = "Prairie State">Prairie State<br>
+
+    <p>3. What State does NOT border Illinois?</P>
+  <input type = "radio" id = "mc" name = "question3" value = "Indiana">Indiana<br>
+  <input type = "radio" id = "mc" name = "question3" value = "Texas">Texas<br>
+  <input type = "radio" id = "mc" name = "question3" value = "Missouri">Missouri<br>
+  <input type = "radio" id = "mc" name = "question3" value = "Iowa">Iowa<br>
+
+   <p>4. What is the state bird?</p>
+   <input type = "radio" id = "mc" name = "question4" value = "Chicken">Chicken<br>
+   <input type = "radio" id = "mc" name = "question4" value = "Cardinal">Cardinal<br>
+   <input type = "radio" id = "mc" name = "question4" value = "Pheasant">Pheasant<br>
+   <input type = "radio" id = "mc" name = "question4" value = "Eagle">Eagle<br>
+
+<p>5. What is Illinois's state flower?</p>
+<input type = "radio" id = "mc" name = "question5" value = "Iris">Iris<br>
+<input type = "radio" id = "mc" name = "question5" value = "Purple Violet">Purple Violet<br>
+<input type = "radio" id = "mc" name = "question5" value = "Peony">Peony<br>
+<input type = "radio" id = "mc" name = "question5" value = "Mistletoe">Mistletoe<br>
+
+<p>6. What body of water touches the eastern border of Illinois?</p>
+<input type = "radio" id = "mc" name = "question6" value = "Kalamazoo River">Kalamazoo River<br>
+<input type = "radio" id = "mc" name = "question6" value = "Chicago River">Chicago River<br>
+<input type = "radio" id = "mc" name = "question6" value = "Lake Michigan">Lake Michigan<br>
+<input type = "radio" id = "mc" name = "question6" value = "Lake Ontario">Lake Ontario<br>
+
+<p>7. The state of Illinois is located in which region?</p>
+<input type = "radio" id = "mc" name = "question7" value = "Great Plains">Great Plains<br>
+<input type = "radio" id = "mc" name = "question7" value = "Northeast">Northeast<br>
+<input type = "radio" id = "mc" name = "question7" value = "Southwest">Southwest<br>
+<input type = "radio" id = "mc" name = "question7" value = "Midwest">Midwest<br>
+
+<p>8. What is Chicago also known as?</p>
+<input type = "radio" id = "mc" name = "question8" value = "The Windy City">The Windy City<br>
+<input type = "radio" id = "mc" name = "question8" value = "The City of Lights">The City of Lights<br>
+<input type = "radio" id = "mc" name = "question8" value = "The City that Never Sleeps">The City that Never Sleeps<br>
+<input type = "radio" id = "mc" name = "question8" value = "The City of Love">The City of Love<br>
+
+<input id = "button" type = "button" value = "Done!" onclick = "check();">
+
+
+  </form>
+
+  <div id = "after_submit">
+    <p id = "number_correct"></p>
+<img class="job" src="./images/view.jpeg">
+  </div>
+
+  </body>
+</html>
